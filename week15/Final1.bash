@@ -5,7 +5,8 @@ fullPages=$(curl -sL "$link")
 patternOutput=$(echo "$fullPages" | \
 xmlstarlet sel -t -m "//table/tr[td]" -v "td[1]" -n)
 
-echo "$patternOutput"
+echo "$patternOutput" > IOC.txt
+
 
 
 
