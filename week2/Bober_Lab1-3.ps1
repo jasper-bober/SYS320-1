@@ -1,0 +1,1 @@
+﻿Get-Service | Where-Object {$_.Status -eq 'Stopped'} | Sort-Object Name | Export-Csv -Path "C:\Users\champuser\SYS320-1\week2\output.csv"

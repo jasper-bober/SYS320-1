@@ -1,0 +1,1 @@
+﻿Get-Process | Where-Object ProcessName -match '^[C]' | Select-Object name,ID
